@@ -381,6 +381,9 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-V2-ndk_platform.vendor
 
 # VNDK
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbinder-v31.so \
     prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidlbase-v31.so \
