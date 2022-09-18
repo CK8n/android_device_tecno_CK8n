@@ -237,6 +237,7 @@ PRODUCT_PACKAGES += \
     SettingsOverlayCK8n \
     SettingsProviderCK8n \
     SystemUIOverlayCK8n \
+    TelephonyOverlayCK8n \
     TetheringConfigOverlayCK8n \
     WifiOverlayCK8n
 
