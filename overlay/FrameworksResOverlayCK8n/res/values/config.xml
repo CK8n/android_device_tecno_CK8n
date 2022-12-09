@@ -353,4 +353,7 @@
 
     <!-- Remote server that can provide NTP responses. -->
     <string translatable="false" name="config_ntpServer">pool.ntp.org</string>
+
+    <!-- Determines whether the shell features all run on another thread. -->
+    <bool name="config_enableShellMainThread">true</bool>
 </resources>
