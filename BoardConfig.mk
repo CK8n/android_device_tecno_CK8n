@@ -59,6 +59,13 @@ LOCAL_KERNEL := $(KERNEL_PATH)/kernel
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 
+# Kernel modules
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules-vendor_ramdisk/modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(addprefix $(KERNEL_PATH)/modules-vendor_ramdisk/, $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD))
+
+BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules-vendor_ramdisk/modules.load.recovery))
+BOARD_RECOVERY_KERNEL_MODULES := $(addprefix $(KERNEL_PATH)/modules-vendor_ramdisk/, $(BOARD_RECOVERY_KERNEL_MODULES_LOAD))
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144                   # 4096      * 64   (pagesize)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864         # 65536     * 1024 (sdc36)
