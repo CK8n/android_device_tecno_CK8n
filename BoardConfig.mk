@@ -63,8 +63,15 @@ BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules-vendor_ramdisk/modules.load))
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(addprefix $(KERNEL_PATH)/modules-vendor_ramdisk/, $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD))
 
-BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules-vendor_ramdisk/modules.load.recovery))
-BOARD_RECOVERY_KERNEL_MODULES := $(addprefix $(KERNEL_PATH)/modules-vendor_ramdisk/, $(BOARD_RECOVERY_KERNEL_MODULES_LOAD))
+# Also add recovery modules to vendor ramdisk
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules-vendor_ramdisk/modules.load.recovery))
+RECOVERY_MODULES := $(addprefix $(KERNEL_PATH)/modules-vendor_ramdisk//, $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD))
+
+# Prevent duplicated entries (to solve duplicated build rules problem)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(sort $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES) $(RECOVERY_MODULES))
+
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules/modules.load))
+BOARD_VENDOR_KERNEL_MODULES := $(addprefix $(KERNEL_PATH)/modules/, $(BOARD_VENDOR_KERNEL_MODULES_LOAD))
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144                   # 4096      * 64   (pagesize)
