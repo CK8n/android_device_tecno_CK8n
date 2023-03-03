@@ -71,7 +71,7 @@ RECOVERY_MODULES := $(addprefix $(KERNEL_PATH)/modules-vendor_ramdisk//, $(BOARD
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(sort $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES) $(RECOVERY_MODULES))
 
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules/modules.load))
-BOARD_VENDOR_KERNEL_MODULES := $(addprefix $(KERNEL_PATH)/modules/, $(BOARD_VENDOR_KERNEL_MODULES_LOAD))
+BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/modules/*.ko)
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144                   # 4096      * 64   (pagesize)
