@@ -177,5 +177,8 @@ DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 # VNDK
 BOARD_VNDK_VERSION := current
 
+# Wi-Fi
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
 # Inherit the proprietary files
 include vendor/tecno/CK8n/BoardConfigVendor.mk
