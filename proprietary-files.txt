@@ -3090,25 +3090,18 @@ vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so
 
 # Wi-Fi
 vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
-vendor/bin/hw/hostapd
 vendor/bin/hw/tetheroffloadservice
-vendor/bin/hw/wpa_supplicant
 vendor/bin/conninfra_loader
 vendor/bin/netdagent
 vendor/bin/wifi_dump
 vendor/bin/wlan_assistant
-vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
-vendor/etc/init/hostapd.android.rc
 vendor/etc/init/netdagent.rc
 vendor/etc/init/tetheroffloadservice.rc
 vendor/etc/init/wlan_assistant.rc
-vendor/lib/libwpa_client.so
 vendor/lib/meta_wifi_data.so
 vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so
-vendor/lib64/libwifi-hal.so
 vendor/lib64/libwifitest.so
-vendor/lib64/libwpa_client.so
 vendor/lib64/meta_wifi_data.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib64/vendor.transsion.hardware.wifi.hostapd@1.0.so
