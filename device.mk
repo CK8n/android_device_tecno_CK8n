@@ -234,6 +234,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayCK8n \
     FrameworksResOverlayCK8n \
+    SettingsOverlayCK8n \
     SettingsProviderCK8n \
     SystemUIOverlayCK8n \
     TetheringConfigOverlayCK8n \
