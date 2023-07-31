@@ -3101,6 +3101,7 @@ vendor/etc/init/tetheroffloadservice.rc
 vendor/etc/init/wlan_assistant.rc
 vendor/lib/meta_wifi_data.so
 vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 vendor/lib64/libwifitest.so
 vendor/lib64/meta_wifi_data.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
