@@ -228,6 +228,11 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/nfc,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayCK8n \
+    TetheringConfigOverlayCK8n \
+    WifiOverlayCK8n
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions
