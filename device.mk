@@ -230,6 +230,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayCK8n \
+    SettingsProviderCK8n \
     TetheringConfigOverlayCK8n \
     WifiOverlayCK8n
 
