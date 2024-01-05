@@ -119,6 +119,30 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6893 \
+    fstab.mt6893.vendor_ramdisk \
+    init_conninfra.rc \
+    init.cgroup.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.insmod.mt6893.cfg \
+    init.insmod.sh \
+    init.modem.rc \
+    init.mt6893.rc \
+    init.mt6893.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.recovery.mt6893.rc \
+    init.recovery.project.rc \
+    init.sensor_2_0.rc \
+    ueventd.mtk.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6893:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6893 \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6893:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6893
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 
