@@ -21,5 +21,14 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
+# Bootloader
+BOARD_VENDOR := tecno
+TARGET_BOOTLOADER_BOARD_NAME := mt6893
+TARGET_NO_BOOTLOADER := true
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6893
+BOARD_HAS_MTK_HARDWARE := true
+
 # Inherit the proprietary files
 include vendor/tecno/CK8n/BoardConfigVendor.mk
