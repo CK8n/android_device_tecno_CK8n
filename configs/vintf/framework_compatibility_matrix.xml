@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<compatibility-matrix version="4.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <version>2.0-1</version>
+        <interface>
+            <name>IGoodixFingerprintDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.biometrics.fingerprint</name>
+        <version>2.0-1</version>
+        <interface>
+            <name>ITranBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.tranHwInfo</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITranHwInfo</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.transsion.hardware.tne.tneengine</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITne</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.transsion.hardware.trancam.trancamserver</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITrancamserver</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.transsion.hardware.tranlog</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITranLog</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.transsion.hardware.tranlogconfig</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITranLogConfig</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.trustonic.tee.tui</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITui</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.trustonic.tee</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>ITee</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
