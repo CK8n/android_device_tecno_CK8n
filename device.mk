@@ -325,6 +325,10 @@ PRODUCT_PACKAGES += \
 # Properties
 include $(LOCAL_PATH)/configs/log/vendor_logtag.mk
 
+# Public Libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
