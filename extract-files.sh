@@ -56,6 +56,8 @@ fi
 function blob_fixup() {
     case "${1}" in
         vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
+            "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
             ;;
     esac
