@@ -7,6 +7,9 @@
 DEVICE_PATH := device/tecno/CK8n
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # A/B
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
