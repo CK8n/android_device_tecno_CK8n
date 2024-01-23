@@ -8,6 +8,9 @@ AEE
 ro.vendor.have_aeev_feature=1
 ro.vendor.aee.convert64=0
 
+# APK Verity
+ro.apk_verity.mode=2
+
 # APU
 ro.vendor.mtk_nn_support=1
 ro.vendor.mtk_nn.option=A,B,E,F,Z
