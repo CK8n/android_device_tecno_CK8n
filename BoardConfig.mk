@@ -7,6 +7,20 @@
 DEVICE_PATH := device/tecno/CK8n
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot\
+    product \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor \
+    vendor \
+    vendor_boot
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
@@ -101,6 +115,14 @@ BOARD_USES_METADATA_PARTITION := true
 # Platform
 TARGET_BOARD_PLATFORM := mt6893
 BOARD_HAS_MTK_HARDWARE := true
+
+# Recovery
+BOARD_USES_RECOVERY_AS_BOOT :=
+TARGET_NO_RECOVERY := true
+BOARD_HAS_LARGE_FILESYSTEM := true
+BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE :=
 
 # Inherit the proprietary files
 include vendor/tecno/CK8n/BoardConfigVendor.mk
