@@ -7,6 +7,9 @@
 DEVICE_PATH := device/tecno/CK8n
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
+# Dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Kernel
 PRODUCT_COPY_FILES += \
     $(KERNEL_PATH)/kernel:kernel
