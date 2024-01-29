@@ -24,9 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
 # A/B
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl \
-    android.hardware.boot@1.2-impl.recovery \
-    android.hardware.boot@1.2-service
+    android.hardware.boot-service.default \
+    android.hardware.boot-service.default_recovery
 
 PRODUCT_PACKAGES += \
     update_engine \
