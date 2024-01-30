@@ -68,6 +68,9 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
             ;;
+        vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
+            sed -i 's/@1.2-mediatek/@1.2-mediatek-64b/g' "${2}"
+            ;;
     esac
 }
 
