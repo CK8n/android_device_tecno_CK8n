@@ -100,6 +100,8 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864         # 65536     * 1024 (sdc36)
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608            # 8192      * 1024 (sdc39)
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
 # Partitions - Dynamic
 BOARD_SUPER_PARTITION_SIZE := 11661934592
 BOARD_SUPER_PARTITION_GROUPS := tecno_dynamic_partitions
