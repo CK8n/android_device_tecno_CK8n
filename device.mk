@@ -397,11 +397,11 @@ PRODUCT_PACKAGES += \
     libkeystore-engine-wifi-hidl \
     android.hardware.wifi-service \
     hostapd \
+    libwifi-hal-wrapper \
     wpa_supplicant
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
-    $(LOCAL_PATH)/configs/wifi/vendor_hals/vendor_hals.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/vendor_hals.xml
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/tecno/CK8n/CK8n-vendor.mk)
