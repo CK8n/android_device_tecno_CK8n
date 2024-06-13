@@ -73,7 +73,9 @@ PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
     libaudiotoolkit \
     libdynproc \
-    libhapticgenerator
+    libhapticgenerator \
+    libunwindstack.vendor \
+    libsqlite.vendor
 
 PRODUCT_PACKAGES += \
     MtkInCallService
@@ -102,7 +104,9 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor.vendor
 
 PRODUCT_PACKAGES += \
-    libcamera_metadata.vendor 
+    libcamera_metadata.vendor \
+    libexif.vendor \
+    libpng.vendor
 
 # Dalvik configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
@@ -120,7 +124,8 @@ PRODUCT_PACKAGES += \
     ndroid.hardware.memtrack-service.mediatek-mali
 
 PRODUCT_PACKAGES += \
-    libdrm.vendor
+    libdrm.vendor \
+    libutilscallstack.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -155,6 +160,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss-V1-ndk_platform.vendor
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libexpat.vendor
 
 # Health
 PRODUCT_PACKAGES += \
