@@ -125,6 +125,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdrm.vendor \
+    libui.vendor \
     libutilscallstack.vendor
 
 # DRM
