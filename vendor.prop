@@ -191,6 +191,7 @@ ro.vendor.mml.mtk_mml_support=0
 # HWUI
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+debug.hwui.skia_atrace_enabled=false
 
 # Incremental
 ro.incremental.enable=yes
@@ -315,7 +316,7 @@ persist.vendor.viwifi_support=1
 persist.vendor.mtk_ct_volte_support=3
 
 # Renderengine
-debug.renderengine.backend=skiagl
+debug.renderengine.backend=skiaglthreaded
 
 # Sensor
 ro.vendor.mtk.sensor.support=yes
