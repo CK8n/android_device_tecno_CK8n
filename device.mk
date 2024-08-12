@@ -10,6 +10,9 @@ KERNEL_PATH := $(DEVICE_PATH)-kernel
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Enable virtual A/B OTA
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
+
 # A/B
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
