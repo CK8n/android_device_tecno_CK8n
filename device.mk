@@ -231,6 +231,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FrameworksResOverlayCK8n \
     SettingsProviderCK8n \
+    SystemUIOverlayCK8n \
     TetheringConfigOverlayCK8n \
     WifiOverlayCK8n
 
