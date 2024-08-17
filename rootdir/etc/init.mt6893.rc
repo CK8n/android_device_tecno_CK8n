@@ -151,6 +151,7 @@ on fs
     write /proc/sys/vm/page-cluster 0
     write /proc/sys/vm/swappiness 100
     write /sys/kernel/mm/swap/vma_ra_enabled false
+    swapon_all /vendor/etc/fstab.enableswap
 
 on fs
 
@@ -1276,15 +1277,3 @@ service osi /system/bin/osi
     disabled
     oneshot
     #seclabel u:r:osi:s0
-#BSP:add custom factory reset XLQLHBW-12 by jianyun.yang 2021.11.22 start
-on property:persist.vendor.tran.wipedata=1 && property:ro.boot.atm=enable
-    tran_factory_reset
-#BSP:add custom factory reset XLQLHBW-12 by jianyun.yang 2021.11.22 end
-
-#SPD : add XLBYYHBWQ-3103 for memfusion2.2 by zihan.ju 20230821 start
-on property:persist.vendor.swapfile_enable=false
-    swapon_all /vendor/etc/fstab.enableswap
-
-on property:persist.vendor.swapfile_enable=true && property:ro.vendor.memfusion2_2.support=false
-    swapon_all /vendor/etc/fstab.enableswap
-#SPD : add XLBYYHBWQ-3103 for memfusion2.2 by zihan.ju 20230821 end

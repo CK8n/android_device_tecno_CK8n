@@ -80,8 +80,3 @@ on property:sys.boot_completed=1
 	#widevine driver node
     chmod 0660 /dev/drm_wv
     chown media system /dev/drm_wv
-
-#BSP: add memfusion2.2 CK8NUPUB-1 by zenghui.li 20240229 start
-on property:sys.boot_completed=1 && property:persist.vendor.swapfile_enable=true && property:ro.vendor.memfusion2_2.support=true
-    swapon_all /vendor/etc/memfusion2/fstab.enableswap_wb
-#BSP: add memfusion2.2 CK8NUPUB-1 by zenghui.li 20240229 end
