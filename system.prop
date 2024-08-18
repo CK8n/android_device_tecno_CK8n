@@ -1,0 +1,72 @@
+# AEE
+ro.vendor.have_aee_feature=1
+persist.vendor.mtk.aee.filter=0
+persist.vendor.anr.dumpthr=1
+
+# Audio
+audio.offload.disable=true
+ro.audio.usb.period_us=16000
+ro.camera.sound.forced=0
+ro.audio.silent=0
+vendor.af.threshold.src_and_effect_count=5
+vendor.af.pausewait.enable=false
+vendor.af.dynamic.sleeptime.enable=true
+
+# Camera
+vendor.camera.tran.nums=1
+
+# Display
+ro.opengles.version=196610
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# Identity
+Build.BRAND=MTK
+
+# Kernel
+ro.kernel.zio=38,108,105,16
+
+# Media
+debug.stagefright.c2inputsurface=-1
+ro.vendor.mtk_omacp_support=1
+ro.vendor.mtk_flv_playback_support=1
+media.stagefright.thumbnail.prefer_hw_codecs=true
+vendor.mtk_thumbnail_optimization=true
+
+# Performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# Power
+sys.ipo.pwrdncap=2
+sys.ipo.disable=1
+
+# Telephony
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+ro.kom_telephony_support=0
+persist.vendor.pms_removable=1
+ro.vendor.mtk_telephony_add_on_policy=0
+persist.vendor.vzw_device_type=0
+persist.vendor.wfc.sys_wfc_support=1
+persist.vendor.mdlog.flush_log_ratio=0
+
+# USB
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+ro.usb.connect.keycodes=100,200
+
+# Wi-Fi
+wifi.interface=wlan0
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
+wifi.tethering.interface=ap0
+wifi.direct.interface=p2p0
+
+# Zygote
+ro.zygote.preload.enable=0
