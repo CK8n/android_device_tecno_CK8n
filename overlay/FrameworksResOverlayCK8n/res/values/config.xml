@@ -593,4 +593,8 @@
 
     <!-- Should the pinner service pin the Camera application? -->
     <bool name="config_pinnerCameraApp">false</bool>
+
+    <!-- List of comma separated package names for which we the system will not show crash like
+         tts, etc. dialogs. -->
+    <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
 </resources>
