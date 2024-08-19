@@ -2987,9 +2987,11 @@ system_ext/priv-app/ImsService/ImsService.apk
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek
 vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc
+vendor/lib/libsensorndkbridge.so:vendor/lib/libsensorndkbridge-v31.so
 vendor/lib/libfile_op.so
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/sensors.mt6893.so
+vendor/lib64/libsensorndkbridge.so:vendor/lib64/libsensorndkbridge-v31.so
 vendor/lib64/libfile_op.so
 vendor/lib64/libhfmanager.so
 vendor/lib64/libhwm.so

@@ -70,6 +70,13 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
             ;;
+        vendor/bin/mnld)
+            ;&
+        vendor/lib64/libaalservice.so)
+            ;&
+        vendor/lib64/libcam.utils.sensorprovider.so)
+            "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-v31.so" "${2}"
+            ;;
         vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
