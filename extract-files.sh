@@ -85,6 +85,8 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
             sed -i 's/@1.2-mediatek/@1.2-mediatek-64b/g' "${2}"
             ;;
+        vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
+            grep -q libshim_camera_metadata.so "$2" || "$PATCHELF" --add-needed libshim_camera_metadata.so "$2"
     esac
 }
 
