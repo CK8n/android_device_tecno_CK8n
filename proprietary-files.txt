@@ -3083,12 +3083,8 @@ vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
 vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # Vibrator
-vendor/bin/hw/android.hardware.vibrator-service.mediatek
-vendor/etc/init/vibrator-mtk-default.rc
 vendor/lib/libvibrator.so
-vendor/lib64/libaacvibrator.so
 vendor/lib64/libvibrator.so
-vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so
 
 # Wi-Fi
 vendor/bin/hw/tetheroffloadservice
