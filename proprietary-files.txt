@@ -2712,7 +2712,6 @@ vendor/etc/init/v3avpud.rc
 vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
 vendor/etc/tranMagiqueSonMode.dat
-vendor/etc/tran_avb.pubkey
 vendor/etc/trancam_filelock.json
 vendor/etc/wfd_source_capability.csv
 vendor/etc/x695FreeFiredModelLabel.txt
