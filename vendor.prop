@@ -108,12 +108,10 @@ ro.vendor.mtk_slow_motion_support=1
 ro.mtk_cam_stereo_camera_support=1
 
 # Connsys
-ro.vendor.connsys.dedicated.log.port=bt,wifi
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.patch.version=-1
 persist.vendor.connsys.dynamic.dump=0
 vendor.connsys.driver.ready=no
-ro.vendor.connsys.dedicated.log=1
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
