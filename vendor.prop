@@ -154,6 +154,10 @@ ro.vendor.pq.mtk_blulight_def_support=1
 ro.vendor.mtk_blulight_def_support=1
 ro.vendor.pref_scale_enable_cfg=1
 
+persist.sys.sf.color_mode=9
+persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=2
+
 # DRM
 ro.vendor.mtk_widevine_drm_l1_support=1
 drm.service.enabled=true
