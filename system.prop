@@ -15,6 +15,7 @@ vendor.af.dynamic.sleeptime.enable=true
 
 # Camera
 vendor.camera.tran.nums=1
+vendor.camera.aux.packagelist=com.android.camera,com.transsion.camera,org.lineageos.aperture,org.lineageos.aperture.dev
 
 # Display
 ro.opengles.version=196610
