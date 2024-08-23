@@ -14,6 +14,8 @@ $(call inherit-product, device/tecno/CK8n/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_DISABLE_EPPE := true
+
 PRODUCT_NAME := lineage_CK8n
 PRODUCT_DEVICE := CK8n
 PRODUCT_MANUFACTURER := TECNO
