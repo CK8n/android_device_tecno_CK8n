@@ -188,6 +188,10 @@ ro.vendor.mtk_svp_on_mtee_support=1
 ro.vendor.mtk_backlight_hwc_support=0
 ro.vendor.mml.mtk_mml_support=0
 
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
 # Incremental
 ro.incremental.enable=yes
 
